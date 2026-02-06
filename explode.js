@@ -5,7 +5,7 @@ const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 let explosionBuffer = null;
 
 // Preload and decode explosion sound
-fetch("/assets/explosion.mp3")
+fetch("assets/explosion.mp3")
     .then(res => res.arrayBuffer())
     .then(data => audioContext.decodeAudioData(data))
     .then(buffer => {
@@ -38,7 +38,7 @@ function spawnExplosionGIF(x, y) {
     const overlay = document.getElementById("explosion-overlay");
 
     const img = document.createElement("img");
-    img.src = "/assets/explosion.gif?cb=" + Date.now(); // unique instance
+    img.src = "assets/explosion.gif?cb=" + Date.now(); // unique instance
     img.className = "explosion-gif";
     img.style.left = x + "px";
     img.style.top = y + "px";
