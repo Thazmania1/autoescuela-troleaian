@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - AEOL Cloud-Tests de Autoescuela y DGT</title>
+    <link rel="icon" href="../assets/aeol_cloud_icon.png">
+
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="./question.css">
+    <link rel="stylesheet" href="../explode.css">
+
+    <script src="./question.js"></script>
+    <script src="../explode.js"></script>
+</head>
+<body selective-explodables>
+    <div id="explosion-overlay"></div>
+
+    <div id="explanation-overlay" class="hidden">
+        <main>
+            <p>Llevo desde las 10:00 haciendo esto por la cara.</p>
+            <p>Ahora mismo son las 17:36 mientras estoy escribiendo esto.</p>
+
+            <a href="./question4.html">Siguiente pregunta</a>
+        </main>
+    </div>
+
+    <img src="../assets/aeol_cloud_logo2.webp" alt="AEOL Cloud logo">
+    
+    <div class="flex row center-cross-axis nowrap" style="width: 90vw; display: flex; justify-content: space-between; padding: 1px 10px; background-color: #ff8000;">
+        <span>Test: 1 .</span>
+        <span>6967:420</span>
+        <span>Conectado</span>
+    </div>
+
+    <div id="explanation-button" class="hidden" onclick="openExplanation()">VER EXPLICACIÓN</div>
+
+    <h2>
+        <span style="font-size: 45px; color: #134D7D; vertical-align: top;">3.</span>
+        ¿Cuanto tiempo llevo haciendo esta aplicación?
+    </h2>
+
+    <div id="answers" class="flex column nowrap" style="width: 75dvw; gap: 15px;">
+        <div class="answer-item">
+            <span>A</span>
+            1 mes.
+        </div>
+        <div class="answer-item" correct>
+            <span>B</span>
+            Empezaste hoy y lo acabaste literal 10 minutos antes de venir al parque de barras.
+        </div>
+        <div class="answer-item">
+            <span>C</span>
+            1 semana.
+        </div>
+    </div>
+
+    <img src="../assets/artoflazyness.png" alt="Fake contros" style="width: 300px; align-self: self-start;" explodable>
+
+    <div id="question-list" class="flex row center-cross-axis wrap" style="row-gap: 5px; column-gap: 10px;" everything-explodable>
+
+    </div>
+</body>
+</html>

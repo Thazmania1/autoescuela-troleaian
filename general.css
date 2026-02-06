@@ -1,0 +1,37 @@
+html, html *
+{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox modular classes */
+.flex
+{
+    display: flex;
+}
+.flex.column
+{
+    flex-direction: column;
+}
+.flex.row
+{
+    flex-direction: row;
+}
+.flex.wrap
+{
+    flex-wrap: wrap;
+}
+.flex.nowrap
+{
+    flex-wrap: nowrap;
+}
+.flex.center-main-axis
+{
+    justify-content: center;
+}
+.flex.center-cross-axis
+{
+    align-items: center;
+}

@@ -1,0 +1,32 @@
+#explosion-overlay
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: visible;
+    z-index: 999999;
+}
+
+.explosion-gif
+{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.exploded
+{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#explosion-overlay
+{
+    position: fixed;
+    z-index: 200;
+}

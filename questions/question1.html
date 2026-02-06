@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test - AEOL Cloud-Tests de Autoescuela y DGT</title>
+    <link rel="icon" href="../assets/aeol_cloud_icon.png">
+
+    <link rel="stylesheet" href="../general.css">
+    <link rel="stylesheet" href="./question.css">
+    <link rel="stylesheet" href="../explode.css">
+
+    <script src="./question.js"></script>
+    <script src="../explode.js"></script>
+</head>
+<body selective-explodables>
+    <div id="explosion-overlay"></div>
+
+    <div id="explanation-overlay" class="hidden">
+        <main>
+            <p>Esta señal:</p>
+            <img src="../assets/prohibido_parar.jpeg" alt="Prohibido parar">
+            <p>Indica la prohibición de realizar una parada, mientras que esta señal:</p>
+            <img src="../assets/prohibido_estacionar.jpeg" alt="Prohibido estacionar">
+            <p>Indica la prohibición de realizar un estacionamiento.</p>
+
+            <p>La lógica está en que, si observas una señal de prohibición de estacionar y luego una señal de prohibición de parar y estacionar:</p>
+            <img src="../assets/prohibido_estacionar.jpeg" alt="Prohibido estacionar">
+            <img src="../assets/prohibido_parar_estacionar.jpg" alt="Prohibido parar y estacionar">
+            <p>La diferencia se encuentra en que se añade una línea roja oblicua hacia la derecha, lo cual implica que esa línea representa la prohibición de parada.</p>
+
+            <p>Ante una señal de prohibición de parada, el conductor puede inmovilizar su vehículo, pero debe asegurarse de que dicha inmovilización termine considerándose como estacionamiento. Es decir, debe superar los 2 minutos, o abandonar el vehículo.</p>
+
+            <a href="./question2.html">Siguiente pregunta</a>
+        </main>
+    </div>
+
+    <img src="../assets/aeol_cloud_logo2.webp" alt="AEOL Cloud logo">
+    
+    <div class="flex row center-cross-axis nowrap" style="width: 90vw; display: flex; justify-content: space-between; padding: 1px 10px; background-color: #ff8000;">
+        <span>Test: 1 .</span>
+        <span>6967:420</span>
+        <span>Conectado</span>
+    </div>
+
+    <img src="../assets/prohibido_parar.jpeg" alt="Prohibido parar" class="question-img">
+    <div id="explanation-button" class="hidden" onclick="openExplanation()">VER EXPLICACIÓN</div>
+
+    <h2>
+        <span style="font-size: 45px; color: #134D7D; vertical-align: top;">1.</span>
+        ¿Qué indica esta señal?
+    </h2>
+
+    <div id="answers" class="flex column nowrap" style="width: 75dvw; gap: 15px;">
+        <div class="answer-item">
+            <span>A</span>
+            Prohibido estacionar.
+        </div>
+        <div class="answer-item" correct>
+            <span>B</span>
+            Prohibido parar.
+        </div>
+        <div class="answer-item">
+            <span>C</span>
+            Prohibido parar y estacionar.
+        </div>
+    </div>
+
+    <img src="../assets/artoflazyness.png" alt="Fake contros" style="width: 300px; align-self: self-start;" explodable>
+
+    <div id="question-list" class="flex row center-cross-axis wrap" style="row-gap: 5px; column-gap: 10px;" everything-explodable>
+
+    </div>
+</body>
+</html>

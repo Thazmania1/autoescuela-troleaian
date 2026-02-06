@@ -1,0 +1,170 @@
+body
+{
+    background-color: black;
+
+    color: white;
+    font-family: Arial;
+    text-align: justify;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 1.5rem;
+
+    padding: 10px 10dvw;
+}
+
+.question-img
+{
+    width: 250px;
+
+    border: 15px solid rgb(220, 240, 255);
+    border-radius: 10px;
+}
+
+.question-item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid white;
+    border-radius: 5px;
+
+    width: 80px;
+    padding: 5px;
+
+    font-size: x-large;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    color: inherit;
+    text-decoration: none;
+}
+
+.answer-item
+{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 15px;
+
+    border: 1px solid white;
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    width: 100%;
+    padding: 2.5px;
+
+    cursor: pointer;
+}
+.answer-item span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 4px solid white;
+    border-radius: 100%;
+    
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    font-size: larger;
+    font-weight: normal;
+
+    padding: 10px;
+    cursor: pointer;
+
+    position: relative;
+}
+
+.answer-item span.correct-tick::after,
+.answer-item span.wrong-x::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centers it */
+    font-size: 50px;
+    pointer-events: none; /* optional: prevents blocking clicks */
+}
+
+/* Colors */
+.answer-item span.correct-tick::after {
+    content: "✔";
+    color: #00c000;
+}
+
+.answer-item span.wrong-x::after {
+    content: "✖";
+    color: #ff0000;
+}
+
+#explanation-button
+{
+    background-color: #ff8000;
+    padding: 10px;
+
+    cursor: pointer;
+}
+#explanation-overlay
+{
+    position: fixed;
+    z-index: 100;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#explanation-overlay main
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    
+    width: 90%;
+    height: 90%;
+
+    padding: 20px;
+
+    overflow-y: auto;
+
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+}
+#explanation-overlay main img
+{
+    width: 150px;
+    border-radius: 10px;
+}
+.hidden
+{
+    display: none !important;
+}
+
+a
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 250px;
+    min-height: 40px;
+
+    background-color: #ff8000;
+    color: inherit;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
